@@ -9,4 +9,11 @@ namespace PalindromeExercise
             Console.WriteLine("Hello World!");
         }
     }
+    //public class WordSmith
+    //{
+    //    public bool IsAPalindrome()
+    //    {
+    //        throw new NotImplementedException();
+    //    }
+    //}
 }
