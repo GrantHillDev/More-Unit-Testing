@@ -16,4 +16,12 @@ namespace PalindromeExercise
     //        throw new NotImplementedException();
     //    }
     //}
+    public class TrueCoders
+    {
+        static void TC()
+        {
+                 throw new NotImplementedException();
+        }
+   
+    }
 }

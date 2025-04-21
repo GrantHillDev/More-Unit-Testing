@@ -9,6 +9,8 @@ namespace PalindromeExerciseTests//namespace PalindromeExerciseTests.tests//chan
         [Theory]//[Fact]
         [InlineData("racecar", true)]//one of the first items to look for in a code wars problem is its return type.
         [InlineData("crap", false)]
+        [InlineData("Racecar", false)]//will need to have the .Tolower extension method embedded into the behavior of the IsAPalindrome method. Updated; not quite -- a palindrome that's pascal cased could be accounted for as an input or argument that could be passed into the method being tested for, but not necessarily as a unit test itself.
+        [InlineData("Civic", false)]//these would have to be made to return false unless there's a way to have the same index of any array passed into the method we're testing for have its character capitalized.
         public void Test1(string word, bool expected)
         {
             //array
@@ -17,6 +19,7 @@ namespace PalindromeExerciseTests//namespace PalindromeExerciseTests.tests//chan
             var actual = tester.IsAPalindrome(word);//inferred typed, but VSC knows it's a Boolean.
             //assert
             Assert.Equal(expected, actual);//doesn't matter in what order these two arguments are written here.
+            var test = new TrueCoders();//lol, I can make new objects or instances of classes inside the program.cs file, which probably means that I can make multiple classes in the same .cs file, and call them in the same manner.... though not sure what purpose that would serve, just yet.
         }
     }
 }
